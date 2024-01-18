@@ -1,75 +1,46 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2E86C1; /* Deep Sky Blue */
-    color: #fff;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
 header {
-    background-color: #E74C3C; /* Alizarin Crimson */
+    background-color: #343a40;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-header:hover,
-footer:hover {
-    background-color: #C0392B; /* Pomegranate */
 }
 
 header h1 {
     margin: 0;
     font-size: 2em;
-    animation: fadeInDown 1s ease-out; /* Fade-in animation */
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px;
 }
 
 section {
     flex: 1;
     margin: 20px;
     padding: 20px;
-    background-color: #3498DB; /* Belize Hole */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 section:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    transform: scale(1.05); /* Scaling on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 h2 {
-    color: #E74C3C; /* Alizarin Crimson */
-    animation: fadeInUp 1s ease-out; /* Fade-in animation */
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #343a40;
 }
 
 ul {
@@ -84,18 +55,29 @@ li {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #C0392B; /* Pomegranate */
-    transition: background-color 0.3s ease-in-out;
+    background-color: #343a40;
+    color: #ffffff;
 }
 
 #projects .project {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #555;
-    background-color: #3498DB; /* Belize Hole */
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
     transition: transform 0.3s ease-in-out;
 }
 
 #projects .project:hover {
-    transform: scale(1.1); /* Scaling on hover */
+    transform: scale(1.05);
+}
+
+/* Smooth scroll behavior for anchor links */
+a {
+    text-decoration: none;
+    color: #343a40;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #007bff;
 }
