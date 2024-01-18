@@ -1,46 +1,57 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #2C3E50; /* Midnight Blue */
+    color: #ECF0F1; /* Clouds */
+    transition: background-color 0.3s ease-in-out;
 }
 
 header {
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #3498DB; /* Belize Hole */
     text-align: center;
     padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header:hover,
+footer:hover {
+    background-color: #2980B9; /* Belize Hole (slightly darker) */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #ECF0F1; /* Clouds */
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out; /* Fade-in animation */
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
 }
 
 section {
     flex: 1;
     margin: 20px;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #2C3E50; /* Midnight Blue */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 section:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Scaling on hover */
 }
 
 h2 {
-    color: #343a40;
+    color: #3498DB; /* Belize Hole */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
 }
 
 ul {
@@ -55,29 +66,30 @@ li {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #3498DB; /* Belize Hole */
+    color: #ECF0F1; /* Clouds */
+    transition: background-color 0.3s ease-in-out;
 }
 
 #projects .project {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #dee2e6;
-    background-color: #ffffff;
+    border: 1px solid #34495E; /* Wet Asphalt */
+    background-color: #2C3E50; /* Midnight Blue */
     transition: transform 0.3s ease-in-out;
 }
 
 #projects .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Scaling on hover */
 }
 
 /* Smooth scroll behavior for anchor links */
 a {
     text-decoration: none;
-    color: #343a40;
+    color: #3498DB; /* Belize Hole */
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #007bff;
+    color: #2980B9; /* Belize Hole (slightly darker) */
 }
